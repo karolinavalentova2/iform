@@ -1,0 +1,164 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+    background: #E9E8E8;
+}
+
+header {
+    justify-content: center;
+    text-align: center;
+    background: white;
+}
+
+.logo {
+    max-width: 130px;
+    margin-top: 12px;
+}
+
+hr {
+    background: #E9E8E8;
+    height: 1px;
+    border: none;
+}
+
+.header-container {
+    list-style-type: none;
+    justify-content: center;
+    display: flex;
+    height: 25px;
+}
+
+.header-container > div {
+    float: left;
+    margin-right: 16px;
+    font-size: 11px;
+    color: #5C1182;
+}
+
+/**/
+/**/
+/* Burger menu icon source: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_menu_icon_js*/
+.menu-icon {
+    display: inline-block;
+    cursor: pointer;
+    position: absolute;
+    top: 15px;
+    left: 15px;
+}
+
+.bar1, .bar2, .bar3 {
+    width: 25px;
+    height: 3px;
+    margin: 6px 0;
+    transition: 0.4s;
+    background: #5C1182;
+}
+
+.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+}
+/**/
+/**/
+
+
+/* figure container */
+figure {
+    margin: 0;
+    padding-top: 1px;
+    background: #F4F4F4;
+}
+
+figure > h2, h3 {
+    font-size: 18px;
+    margin-left: 20px;
+}
+
+figure > h3 {
+    font-weight: 300;
+    margin-block-start: -0.5em;
+}
+
+.navigation-slideshow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 10vw;
+    background: white;
+    margin-top: -5px;
+    position: relative;
+}
+
+a.arrow-left {
+    left: 10px;
+    position: absolute;
+}
+
+a.arrow-right {
+    right: 10px;
+    position: absolute;
+}
+
+.slideshow-ellipse > a > img {
+    width: 17px;
+    padding: 3px;
+}
+
+/* section container */
+section {background: #F4F4F4; padding-bottom: 11px;}
+
+.section-content {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.price-overview {
+    display: flex;
+    justify-content: space-between;
+    color: #FE3366;
+}
+
+.price-overview > h4 {
+    align-items: start;
+    font-size: 18px;
+    align-self: flex-end;
+    margin-block-end: 8px;
+    font-weight: 800;
+}
+
+.price-overview > h5 {
+    font-size: 13px;
+    align-self: flex-end;
+    margin-block-end: 10px;
+}
+
+.button-order-now {
+    border: none;
+    background: #5C1182;
+    color: white;
+    width: 100%;
+    height: 50px;
+    font-size: 17px;
+    font-weight: 800;
+}
+
+.additional-message {
+    font-size: 10px;
+    color: #888B8D;
+    text-align: end;
+}
+
+.container-product-details {list-style-image: url("images/yes.png");}
+
+.container-product-details > li {
+    margin-block-end: 1em;
+    font-size: 13px;
+}
