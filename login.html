@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="css/login.css" />
+</head>
+<body>
+<header>
+    <a><img class="logo" src="images/logo.png" alt="logo"></a>
+    <hr>
+</header>
+<main>
+    <div class="login-container">
+        <h2>Log in</h2>
+        <h3>Karolina Valentova & Simon Erasmus Johansen</h3>
+        <form onsubmit="doLogin(event)">
+            <label for="entryName"></label>
+            <input type="text" class="form-control" id="entryName" placeholder="Enter your user name..." required><br/>
+            <label for="entryPassword"></label>
+            <input type="password" class="form-control" id="entryPassword" placeholder="Enter your password..." required><br/>
+            <button type="submit" class="btn btn-primary">Log in</button>
+        </form>
+        <p>KEA / School project / 2019</p>
+    </div>
+</main>
+<script src="script.js"></script>
+</body>
+</html>
