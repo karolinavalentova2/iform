@@ -1,0 +1,223 @@
+* {
+    font-size: 10px;
+    /*margin: 0;*/
+    padding: 0;
+}
+html {
+    scroll-behavior: smooth;
+    background: #e9e8e8;
+}
+body {
+    width: 100%;
+    font-family: sans-serif;
+    margin: 0;
+}
+
+header {
+    justify-content: center;
+    text-align: center;
+    background: white;
+    position: fixed;
+    width: 100%;
+    height: 95px;
+}
+
+.logo {
+    max-width: 13rem;
+    margin-top: 1.5rem;
+}
+
+hr {
+    background: #e9e8e8;
+    height: 0.1rem;
+    border: none;
+    margin-top: 1rem;
+}
+
+.header-container {
+    justify-content: center;
+    position: relative;
+    display: flex;
+    border-bottom: solid 1px #e9e8e8;
+    height: 2.5rem;
+    margin-top: 1rem;
+}
+
+.header-container > div {
+    font-size: 1.1rem;
+    color: #5c1182;
+}
+
+.location-navigation {
+    display: inline;
+}
+
+.nav-location {
+    width: 1.7rem;
+    /*padding: 0 1rem;*/
+}
+.nav-location-container {
+    display: flex;
+    width: 22rem;
+    justify-content: space-between;
+    z-index: 1;
+}
+
+.underline {
+    background: #5c1182;
+    position: absolute;
+    top: 8px;
+    width: 200px;
+    height: 1px;
+}
+
+/**/
+/**/
+/* Burger menu icon source: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_menu_icon_js*/
+.menu-icon {
+    display: inline-block;
+    cursor: pointer;
+    position: absolute;
+    top: 1.5rem;
+    left: 1.5rem;
+}
+
+.bar1,
+.bar2,
+.bar3 {
+    width: 2.5rem;
+    height: 0.3rem;
+    margin: 0.6rem 0;
+    transition: 0.4s;
+    background: #5c1182;
+}
+
+.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-0.9rem, 0.6rem);
+    transform: rotate(-45deg) translate(-0.9rem, 0.6rem);
+}
+
+.change .bar2 {
+    opacity: 0;
+}
+
+.change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-0.8rem, -0.8rem);
+    transform: rotate(45deg) translate(-0.8rem, -0.8rem);
+}
+/**/
+/**/
+
+main {
+    margin: 0;
+    padding-top: 1px;
+    display: flex;
+    justify-content: center;
+}
+section {
+    width: 100%;
+    background: white;
+    max-width: 520px;
+}
+
+.section-container {min-height: 550px;}
+
+h2 {
+    margin-top: 11rem;
+    font-weight: 300;
+    text-align: center;
+    font-size: 1.6rem;
+}
+
+.product-container {
+    width: 76vw;
+    max-width: 400px;
+    height: 10rem;
+    display: grid;
+    grid-template-columns: 0.8fr 1fr;
+    grid-template-rows: 3rem 1.5fr;
+    grid-row-gap: 1.5rem;
+    grid-template-areas:
+            "img h3"
+            "img input";
+    border: solid 1px #DCDCDC;
+    border-radius: 6px;
+    margin-bottom: 2rem;
+}
+
+.product-img {
+    grid-area: img;
+    justify-self: center;
+    align-self: center;
+}
+ h3 {grid-area: h3;}
+.size-product {
+    grid-area: input;
+    width: 7rem;
+    height: 3rem;
+    font-size: 1.6rem;
+    padding: 4px;
+}
+
+.size-product > option {
+    font-size: 1.7rem;
+    padding: 5px 0;
+}
+
+.subscription-container-default {
+    width: 76vw;
+    max-width: 400px;
+    height: 7rem;
+    border: solid 1px #DCDCDC;
+    border-radius: 6px;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.confirm-button {
+    border: none;
+    background: #5c1182;
+    color: white;
+    width: 76vw;
+    max-width: 400px;
+    height: 5rem;
+    font-size: 1.7rem;
+    font-weight: 800;
+}
+
+h3 {
+    margin-block-start: 1.5rem;
+    margin-block-end: 0;
+    font-weight: normal;
+    font-size: 1.7rem;
+}
+
+h4 {
+    color: #FF3366;
+    margin-block-start: 0.6rem;
+    margin-block-end: 1em;
+    font-weight: 100;
+    font-size: 1.4rem;
+}
+
+.expand-message > h5 {
+    color: #5c1182;
+    font-size: 1.5rem;
+    text-decoration: underline;
+    margin-block-start: 0.8em;
+    margin-block-end: 0.67em;
+    font-weight: bold;
+    text-align: center;
+}
+
+.bold {
+    font-weight: bold;
+    font-size: 1.7rem;
+}
+
+a, button {cursor: pointer;}
+
+.flex-container {
+    display: flex;
+    justify-content: center;
+}
