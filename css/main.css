@@ -381,3 +381,65 @@ button {
   display: flex;
   justify-content: center;
 }
+
+/* ------------------------------ your basket page  */
+
+.message-pricelist {
+  border-bottom: solid 1px grey;
+  height: 34px;
+  margin-bottom: 1rem;
+  width: 76%;
+}
+
+.message-pricelist > h3 {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-left: 0;
+}
+
+.message-pricelist > h3 {font-size: 1.5rem;}
+.message-pricelist > h3 > span {font-size: inherit;}
+.price-info-basket {text-align: center;}
+
+.price-info-basket > h3 {margin: 4rem 0 1px 0;}
+
+.price-info-basket > h2 {
+  font-size: 3rem;
+  margin: 0 0 3rem 0;
+  color: #ff3366;
+}
+
+.product-container-selected {
+  width: 76vw;
+  max-width: 400px;
+  height: 10rem;
+  display: grid;
+  grid-template-columns: 0.7fr 1fr;
+  grid-template-rows: 12% 6% auto;
+  grid-row-gap: 1.5rem;
+  grid-template-areas:
+          "img label"
+          "img product"
+          "img size";
+  border: solid 1px #dcdcdc;
+  border-radius: 6px;
+  margin-bottom: 2rem;
+}
+
+.product-name {
+  grid-area: product;
+  margin-left: 1rem;
+  font-size: 1.3rem;
+}
+
+.product-size {
+  grid-area: size;
+  margin-left: 3rem;
+  font-size: 1.3rem;
+}
+
+.product-label-selected {
+  grid-area: label;
+  margin-left: 1.3rem;
+}
