@@ -377,7 +377,7 @@ button {
   cursor: pointer;
 }
 
-.subs-flex-container {
+.flex-container {
   display: flex;
   justify-content: center;
 }
