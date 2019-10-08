@@ -14,7 +14,7 @@ function doLogin(e) {
 // Index
 // go to next page
 document.querySelector(".button-order-now").addEventListener("click", e => {
-  window.location.href = "basket.html";
+  window.location.href = "subscriptions.html";
 });
 
 //basket
