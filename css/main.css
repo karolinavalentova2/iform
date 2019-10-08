@@ -1,3 +1,4 @@
+/*I made a change*/
 * {
   font-size: 10px;
   /*margin: 0;*/
@@ -96,7 +97,9 @@ figure {
   /*padding-top: 1px;*/
 }
 
-h2 {margin-top: 10rem;}
+h2 {
+  margin-top: 10rem;
+}
 
 figure > h2,
 h3 {
@@ -218,8 +221,10 @@ a {
   background: white;
 }
 
-a, button {cursor: pointer;}
-
+a,
+button {
+  cursor: pointer;
+}
 
 /* ------------------------------ Subscription page  */
 .subs-header-container {
@@ -293,8 +298,8 @@ a, button {cursor: pointer;}
   grid-template-rows: 3rem 1.5fr;
   grid-row-gap: 1.5rem;
   grid-template-areas:
-          "img h3"
-          "img input";
+    "img h3"
+    "img input";
   border: solid 1px #dcdcdc;
   border-radius: 6px;
   margin-bottom: 2rem;
