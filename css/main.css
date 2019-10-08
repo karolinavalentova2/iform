@@ -96,7 +96,9 @@ figure {
   /*padding-top: 1px;*/
 }
 
-h2 {margin-top: 10rem;}
+h2 {
+  margin-top: 10rem;
+}
 
 figure > h2,
 h3 {
@@ -215,11 +217,13 @@ main section[data-section="checkout"] {
 }
 a {
   font-size: 3rem;
-  background: white;
+  /*background: white;*/
 }
 
-a, button {cursor: pointer;}
-
+a,
+button {
+  cursor: pointer;
+}
 
 /* ------------------------------ Subscription page  */
 .subs-header-container {
@@ -293,8 +297,8 @@ a, button {cursor: pointer;}
   grid-template-rows: 3rem 1.5fr;
   grid-row-gap: 1.5rem;
   grid-template-areas:
-          "img h3"
-          "img input";
+    "img h3"
+    "img input";
   border: solid 1px #dcdcdc;
   border-radius: 6px;
   margin-bottom: 2rem;
@@ -380,4 +384,76 @@ button {
 .flex-container {
   display: flex;
   justify-content: center;
+}
+
+/*----------subs*/
+.subsBox {
+  position: relative;
+}
+.subsLabel {
+  position: absolute;
+  top: -0.5rem;
+  background: white;
+  width: 18%;
+  left: calc(50% - (18% / 2));
+  cursor: pointer;
+}
+.subsLabel::after {
+  width: 100%;
+  height: 100%;
+  content: "";
+  top: 0;
+  left: 0;
+}
+input[name="sub"] {
+  display: none;
+}
+input[name="sub"]:checked ~ .subscription-container-default {
+  border: solid 1px black !important;
+}
+input[name="sub"]:checked ~ .subscription-container-default .subsLabel {
+  font-weight: bold;
+}
+/*------------------------Delivery*/
+form {
+  display: grid;
+  grid-template-columns: 25% 1fr;
+  gap: 1rem;
+  width: 77%;
+  margin: auto;
+}
+form input {
+  grid-column: 1 / -1;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  border: solid 0.1rem lightgray;
+}
+form input::placeholder {
+  color: black;
+  opacity: 1;
+}
+form input[name="zip"] {
+  grid-column: 1 / 2;
+}
+form input[name="city"] {
+  grid-column: 2 / -1;
+}
+/*Bottom section*/
+.bottomDelivery {
+  background: white;
+}
+.bottomDelivery p {
+  width: 77%;
+  margin: auto;
+}
+.bottomDelivery h3 {
+  text-align: center;
+  font-size: 1.4rem;
+  font-weight: 100;
+}
+.bottomDelivery img {
+  margin: auto;
+  display: block;
 }
