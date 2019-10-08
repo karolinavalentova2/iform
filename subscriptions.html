@@ -1,73 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Subscriptions</title>
-    <link rel="stylesheet" href="css/subscriptions.css" />
-</head>
-<body>
-<header>
-    <div class="menu-icon" onclick="myFunction(this)">
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <header>
+      <div class="menu-icon" onclick="myFunction(this)">
         <div class="bar1"></div>
         <div class="bar2"></div>
         <div class="bar3"></div>
-    </div>
-    <a><img class="logo" src="images/logo.png" alt="logo"/></a>
-    <hr/>
-    <nav class="header-container">
+      </div>
+      <a><img class="logo" src="images/logo.png" alt="logo"/></a>
+      <hr />
+      <nav class="header-container">
         <div class="nav-location-container">
-            <a><img class="nav-location" src="images/ellipse_nav.png" alt=""></a>
-            <a><img class="nav-location" src="images/ellipse_nav.png" alt=""></a>
-            <a><img class="nav-location" src="images/ellipse_nav.png" alt=""></a>
-            <a><img class="nav-location" src="images/ellipse_nav.png" alt=""></a>
-            <a><img class="nav-location" src="images/ellipse_nav.png" alt=""></a>
+          <a><img class="nav-location" src="images/ellipse_nav.png" alt=""/></a>
+          <a><img class="nav-location" src="images/ellipse_nav.png" alt=""/></a>
+          <a><img class="nav-location" src="images/ellipse_nav.png" alt=""/></a>
+          <a><img class="nav-location" src="images/ellipse_nav.png" alt=""/></a>
+          <a><img class="nav-location" src="images/ellipse_nav.png" alt=""/></a>
         </div>
         <span class="underline"></span>
-    </nav>
-</header>
-<main>
-    <section>
+      </nav>
+    </header>
+    <main>
+      <section>
         <div class="section-container">
-            <h2>Confirm subscription</h2>
-            <div  class="flex-container">
-                <div class="product-container">
-                    <img class="product-img" src="images/jacket.png" alt="">
-                    <h3 class="size-label">Selected size</h3>
-                    <label>
-                        <select class="size-product">
-                            <option>S</option>
-                            <option>M</option>
-                            <option>L</option>
-                            <option>XL</option>
-                        </select>
-                    </label>
-                </div>
+          <h2>Confirm subscription</h2>
+          <div class="flex-container">
+            <div class="product-container">
+              <img class="product-img" src="images/jacket.png" alt="" />
+              <h3 class="size-label">Selected size</h3>
+              <label>
+                <select class="size-product">
+                  <option>S</option>
+                  <option>M</option>
+                  <option>L</option>
+                  <option>XL</option>
+                </select>
+              </label>
             </div>
-            <a class="flex-container">
-                <div class="subscription-container-default">
-                    <h3><strong class="bold">4 Magazines</strong> for 149 kr.</h3>
-                    <h4>Save 761 kr.</h4>
-                </div>
-            </a>
-            <a class="flex-container">
-                <div class="subscription-container-default">
-                    <h3><strong class="bold">6 Magazines</strong> for 199 kr.</h3>
-                    <h4>Save 866 kr.</h4>
-                </div>
-            </a>
-            <a class="flex-container">
-                <div class="subscription-container-default">
-                    <h3><strong class="bold">8 Magazines</strong> for 299 kr.</h3>
-                    <h4>Save 921 kr.</h4>
-                </div>
-            </a>
-            <div class="flex-container">
-                <button class="confirm-button">Confirm</button>
+          </div>
+          <a class="flex-container">
+            <div class="subscription-container-default">
+              <label for="a">Your Choise</label>
+              <input type="radio" id="a" name="sub" />
+              <h3><strong class="bold">4 Magazines</strong> for 149 kr.</h3>
+              <h4>Save 761 kr.</h4>
             </div>
-            <a class="expand-message"><h5>Watch your savings</h5></a>
+          </a>
+          <a class="flex-container">
+            <div class="subscription-container-default">
+              <label for="b">Most popular</label>
+              <input type="radio" id="b" name="sub" />
+              <h3><strong class="bold">6 Magazines</strong> for 199 kr.</h3>
+              <h4>Save 866 kr.</h4>
+            </div>
+          </a>
+          <a class="flex-container">
+            <div class="subscription-container-default">
+              <label for="c">Best in value</label>
+              <input type="radio" id="c" name="sub" />
+              <h3><strong class="bold">8 Magazines</strong> for 299 kr.</h3>
+              <h4>Save 921 kr.</h4>
+            </div>
+          </a>
+          <div class="flex-container">
+            <button class="confirm-button">Confirm</button>
+          </div>
+          <a class="expand-message"><h5>Watch your savings</h5></a>
         </div>
-    </section>
-</main>
-</body>
+      </section>
+    </main>
+  </body>
 </html>
