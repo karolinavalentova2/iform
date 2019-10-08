@@ -262,15 +262,15 @@ hr {
   border: none;
   margin-top: 1rem;
 }
-
-/*.header-container {
+/*Edited*/
+header-container {
   justify-content: center;
   position: relative;
   display: flex;
   border-bottom: solid 1px #e9e8e8;
   height: 2.5rem;
   margin-top: 1rem;
-}*/
+}
 
 .header-container > div {
   font-size: 1.1rem;
