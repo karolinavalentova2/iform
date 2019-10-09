@@ -109,7 +109,6 @@ h2 {margin-top: 10rem;}
 }
 
 .slideshow-img {
-  max-width: 1140px !important;
   width: 100vw;
 }
 
@@ -614,8 +613,10 @@ input[name="sub"]:checked ~ .subscription-container-default .subsLabel {
 /*------------------------------------------- Media queries */
 @media screen and (min-width: 620px) {
   .index-main-container {
-    max-width: 1140px;
+    max-width: 1300px;
     background: #f4f4f4;
+    min-height: 100vh;
+    margin: auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1rem 14rem auto;
@@ -635,7 +636,6 @@ input[name="sub"]:checked ~ .subscription-container-default .subsLabel {
 
   .index-caption {
     display: inline-flex;
-    width: 100vw;
     margin-block-start: 0;
     justify-content: center;
     grid-area: caption;
@@ -653,7 +653,7 @@ input[name="sub"]:checked ~ .subscription-container-default .subsLabel {
   }
 
   .slideshow-container, .slideshow-img {
-    max-width: 1140px !important;
+    max-width: 600px;
     width: 48vw;
   }
 
@@ -662,6 +662,12 @@ input[name="sub"]:checked ~ .subscription-container-default .subsLabel {
   }
 }
 
-@media screen and (min-width: 620px) {
+@media screen and (min-width: 900px) {
+  .button-order-now {
+    width: 200px;
+  }
 
+  .container-product-details > li {
+    font-size: 1.6rem;
+  }
 }
