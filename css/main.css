@@ -289,31 +289,36 @@ button {
 }
 
 .product-container {
-  width: 76vw;
   max-width: 400px;
   height: 10rem;
-  display: grid;
-  grid-template-columns: 0.8fr 1fr;
-  grid-template-rows: 3rem 1.5fr;
-  grid-row-gap: 1.5rem;
-  grid-template-areas:
-    "img h3"
-    "img input";
-  border: solid 1px #dcdcdc;
-  border-radius: 6px;
-  margin-bottom: 2rem;
+  width: 17rem;
+  margin: 2rem 1rem 5rem 0;
+  display: flex;
+  justify-content: center;
 }
 
 .product-img {
-  grid-area: img;
+  width: 10rem;
   justify-self: center;
   align-self: center;
 }
-.product-container > h3 {
-  grid-area: h3;
+
+.free-gift {
+  color: white;
+  background: #FF3366;
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
+  position: absolute;
+  margin: 9rem 5rem;
 }
+.free-gift > p {
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+}
+
 .size-product {
-  grid-area: input;
   width: 7rem;
   height: 3rem;
   font-size: 1.6rem;
@@ -328,7 +333,7 @@ button {
 .subscription-container-default {
   width: 76vw;
   max-width: 400px;
-  height: 7rem;
+  height: 5rem;
   border: solid 1px #dcdcdc;
   border-radius: 6px;
   text-align: center;
@@ -361,14 +366,43 @@ button {
   font-size: 1.4rem;
 }
 
+.discount-icon {
+  color: white;
+  background: #FF3366;
+  border-radius: 0.7rem;
+  position: absolute;
+  width: 7.7rem;
+  height: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: -1.3rem;
+  right: 27px;
+}
+
+.discount-icon > h4 {
+  position: absolute;
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-block-start: 0rem;
+}
+
 .expand-message > h5 {
   color: #5c1182;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   text-decoration: underline;
   margin-block-start: 0.8em;
   margin-block-end: 0.67em;
   font-weight: bold;
   text-align: center;
+}
+
+.postage-info {
+  color: #5B5B5B;
+  font-size: 1.3rem;
+  text-align: center;
+  margin-block-start: 1rem;
+  margin-block-end: 0;
 }
 
 .bold {
@@ -394,9 +428,10 @@ button {
   position: absolute;
   top: -0.5rem;
   background: white;
-  width: 18%;
-  left: calc(50% - (18% / 2));
+  width: 27%;
+  left: calc(50% - (27% / 2));
   cursor: pointer;
+  font-size: 1.4rem;
 }
 .subsLabel::after {
   width: 100%;
@@ -409,9 +444,14 @@ input[name="sub"] {
   display: none;
 }
 input[name="sub"]:checked ~ .subscription-container-default {
-  border: solid 1px black !important;
+  border: solid 2px #5C1182 !important;
 }
 input[name="sub"]:checked ~ .subscription-container-default .subsLabel {
+  font-weight: bold;
+}
+
+.subsLabelPopular {
+  color: #5C1182;
   font-weight: bold;
 }
 /* ------------------------------ your basket page  */
@@ -465,6 +505,12 @@ input[name="sub"]:checked ~ .subscription-container-default .subsLabel {
   border: solid 1px #dcdcdc;
   border-radius: 6px;
   margin-bottom: 2rem;
+}
+
+.product-img-overview {
+  grid-area: img;
+  justify-self: center;
+  align-self: center;
 }
 
 .product-name {
