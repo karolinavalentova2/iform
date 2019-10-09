@@ -5,5 +5,5 @@ let location = window.location.href;
 console.log(location);
 
 document.querySelector(".confirm-button").addEventListener("click", e => {
-  window.location.href = "delivery.html";
+  window.location.href = "delivery.html?size=s?sub=1";
 });

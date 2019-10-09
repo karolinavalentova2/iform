@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Delivery</title>
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <header>
+      <div class="menu-icon" onclick="myFunction(this)">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+      </div>
+      <a><img class="logo" src="images/logo.png" alt="logo"/></a>
+      <hr />
+      <nav class="subs-header-container">
+        <a href="/your_basket.html">Back</a>
+        <div class="nav-location-container">
+          <a><img class="nav-location" src="images/ellipse_nav.png" alt=""/></a>
+          <a><img class="nav-location" src="images/ellipse_nav.png" alt=""/></a>
+          <a><img class="nav-location" src="images/ellipse_nav.png" alt=""/></a>
+          <a><img class="nav-location" src="images/ellipse_nav.png" alt=""/></a>
+          <a><img class="nav-location" src="images/ellipse_nav.png" alt=""/></a>
+        </div>
+        <span class="underline"></span>
+      </nav>
+    </header>
+    <main class="subs-main">
+      <section class="subs-section">
+        <div class="subs-section-container">
+          <h2>Choose payment method</h2>
+          <form id="formPayment">
+            <div>
+              <input
+                type="radio"
+                name="paymentType"
+                value="visa-dankort"
+                id="visa-dankort"
+              />
+              <label for="visa-dankort">Visa/Dankort</label>
+            </div>
+            <div>
+              <input
+                type="radio"
+                name="paymentType"
+                value="credit-card"
+                id="credit-card"
+              />
+              <label for="credit-card">Credit Card</label>
+            </div>
+            <div>
+              <input
+                type="radio"
+                name="paymentType"
+                value="mobilepay"
+                id="mobilepay"
+              />
+              <label for="mobilepay">MobilePay</label>
+            </div>
+            <div>
+              <input type="radio" name="paymentType" value="giro" id="giro" />
+              <label for="giro">Giro Card (SEK + 15 in fee)</label>
+            </div>
+            <div class="terms">
+              <input type="checkbox" name="terms" id="terms" />
+              <label for="terms"
+                >I have read and accepted the subscription terms</label
+              >
+              <a href="#">Read more</a>
+            </div>
+            <div class="terms">
+              <input type="checkbox" name="marketing" id="marketing" />
+              <label for="marketing"
+                >Yes, I would like to receive exciting newsletters and offers on
+                Media products, Housing &amp; Lifestyle, Sports &amp; Leisure,
+                Travel, Fashion &amp; Beauty, Groceries, Events, Analyzes and
+                Games via letter, telephone and other electronic media eg e-mail
+                and sms from the Bonnier Publications Group. You can unsubscribe
+                from direct marketing at any time.</label
+              >
+              <a href="#">Read more</a>
+            </div>
+            <ul>
+              <li>
+                After the offer, you continue to subscribe on a continuous basis
+                and can cancel it at any time.
+              </li>
+              <li>FORM is published 18 times a year.</li>
+              <li>
+                The subscription is payable for 4 numbers at a time, a total of
+                DKK 310 .. (DKK 77.50 per number)
+              </li>
+            </ul>
+            <div class="flex-container">
+              <div class="product-container-selected">
+                <img
+                  class="product-img-overview"
+                  src="images/jacket.png"
+                  alt=""
+                />
+                <h3 class="product-label-selected">4 Magazines</h3>
+                <h4 class="product-name">+ ActiveFit fiber jacket</h4>
+                <h4 class="product-size">size: L</h4>
+              </div>
+            </div>
+            <div class="flex-container">
+              <div class="price-info-basket">
+                <h3>Total price incl. delivery</h3>
+                <h2>198,50 DKK</h2>
+              </div>
+            </div>
+            <button id="orderDone" class="confirm-button">
+              Confirm Payment
+            </button>
+            <a href="#" class="return">Return</a>
+          </form>
+          <section class="bottomDelivery">
+            <h3>About IFORM</h3>
+            <p>
+              Strength training, abdominal exercises, power yoga, running or
+              long walks… No matter how you exercise, you will find plenty of
+              inspiration in what I FORM - we tell you about new, exciting forms
+              of exercise that make you stronger, happier and healthier. But
+              FORM is not just exercise. You also get to know how food affects
+              your body and your mood and how you can increase your wellbeing by
+              eating right.
+            </p>
+          </section>
+          <section class="bottomDelivery">
+            <h3>Secure payment with</h3>
+            <img
+              src="images/cards.png"
+              alt="Visa, Mastercard, Visa Electron, Maestro, MobilePay, Dancard"
+            />
+          </section>
+        </div>
+      </section>
+    </main>
+    <script src="javascript/delivery.js"></script>
+  </body>
+</html>
