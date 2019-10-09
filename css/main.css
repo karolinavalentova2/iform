@@ -617,6 +617,8 @@ input[name="sub"]:checked ~ .subscription-container-default .subsLabel {
   grid-column: 2 / -1;
 }
 
+.end-form-margin {margin-bottom: 3rem !important;}
+
 /*Bottom section*/
 .bottomDelivery {
   background: white;
@@ -625,12 +627,16 @@ input[name="sub"]:checked ~ .subscription-container-default .subsLabel {
 .bottomDelivery p {
   width: 77%;
   margin: auto;
+  font-size: 1.2rem;
+  text-align: center;
 }
 
 .bottomDelivery h3 {
   text-align: center;
   font-size: 1.4rem;
   font-weight: 100;
+  margin-top: 3.5rem;
+  margin-left: 0;
 }
 
 .bottomDelivery img {
@@ -745,7 +751,7 @@ input[name="sub"]:checked ~ .subscription-container-default .subsLabel {
   .container-product-details > li {
     font-size: 1.6rem;
   }
-}s
+}
 
 @media screen and (min-width: 520px) {
   .back-button {
