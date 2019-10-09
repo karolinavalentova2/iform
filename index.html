@@ -17,82 +17,81 @@
       <hr />
       <div class="header-container">
         <div>
-          <img src="images/mark_circle.png" alt="" /> 14 days cancellation right
+          <img src="images/mark_circle.png" alt=""/> 14 days cancellation right
         </div>
-        <div><img src="images/mark_circle.png" alt="" /> No binding</div>
+        <div><img src="images/mark_circle.png" alt=""/> No binding</div>
       </div>
     </header>
-    <main>
-      <figure>
-        <h2>4 No. of IFORM</h2>
-        <h3>+ ActiveFit fiber jacket</h3>
-        <img src="images/slideshow.png" alt="" style="width: 100%" />
-        <nav class="navigation-slideshow">
-          <a class="arrow-left"
-            ><img src="images/arrow_left.png" alt="" style="width: 6vw"
-          /></a>
-          <div class="slideshow-ellipse">
-            <a><img src="images/ellipse_full.png" alt=""/></a>
-            <a><img src="images/ellipse.png" alt=""/></a>
-            <a><img src="images/ellipse.png" alt=""/></a>
-            <a><img src="images/ellipse.png" alt=""/></a>
-            <a><img src="images/ellipse.png" alt=""/></a>
-            <a><img src="images/ellipse.png" alt=""/></a>
-          </div>
-          <a class="arrow-right"
-            ><img src="images/arrow_right.png" alt="" style="width: 7vw"
-          /></a>
-        </nav>
-      </figure>
-      <section>
-        <div class="section-content">
-          <div class="price-overview">
-            <h4>149 kr.</h4>
-            <h5>Save 761 SEK!</h5>
-          </div>
-          <!--form-->
-          <label>Select size: </label>
-          <label for="s"
-            >S
-            <input type="radio" id="s" value="s" name="size" />
-          </label>
-          <label for="m"
-            >M
-            <input type="radio" id="m" value="m" name="size" />
-          </label>
-          <label for="l"
-            >L
-            <input type="radio" id="l" value="l" name="size" />
-          </label>
-          <label for="xl"
-            >XL
-            <input type="radio" id="xl" value="xl" name="size" />
-          </label>
-          <button class="button-order-now">Go to basket</button>
-          <!--/form-->
-          <p class="additional-message">
-            + 49,50 DKK In postage and exp. A total of 198,50 DKKK
-          </p>
-          <ul class="container-product-details">
-            <li>
-              The magazine hits your mailbox every three weeks - postage-free
-            </li>
-            <li>Nice & lightweight fiber jacket from ActiveFit</li>
-            <li>
-              Get big discounts on workout gear and equipment at the "Moreshop"
-              benefit club
-            </li>
-            <li>
-              Digital version of the latest 12 issues of I FORM via the WYPE app
-            </li>
-            <li>
-              You can cancel your subscription at any time. After the offer, you
-              continue in the current subscription to DKK 77.50 per. number
-              incl. delivery.
-            </li>
-          </ul>
+    <main class="index-main">
+      <div class="index-main-container">
+        <div class="index-caption">
+          <h2>4 No. of IFORM</h2>
+          <h3>+ ActiveFit fiber jacket</h3>
         </div>
-      </section>
+        <figure class="index-figure">
+          <div class="slideshow-container">
+            <img src="images/slideshow.png" alt="" style="width: 100%" />
+            <nav class="navigation-slideshow">
+              <a class="arrow-left"><img src="images/arrow_left.png" alt="" style="width: 25px"/></a>
+              <div class="slideshow-ellipse">
+                <a><img src="images/ellipse_full.png" alt=""/></a>
+                <a><img src="images/ellipse.png" alt=""/></a>
+                <a><img src="images/ellipse.png" alt=""/></a>
+                <a><img src="images/ellipse.png" alt=""/></a>
+                <a><img src="images/ellipse.png" alt=""/></a>
+                <a><img src="images/ellipse.png" alt=""/></a>
+              </div>
+              <a class="arrow-right"><img src="images/arrow_right.png" alt="" style="width: 25px"/></a>
+            </nav>
+          </div>
+        </figure>
+        <section class="index-section">
+          <div class="section-content">
+            <div class="price-overview">
+              <h4>149 kr.</h4>
+              <h5>Save 761 SEK!</h5>
+            </div>
+            <!--form-->
+            <form>
+              <label class="label-container">Select size:
+                <span class="label-content">
+                <input type="radio" id="s" value="s" name="size" />
+                <label class="label-box" for="s">S</label>
+                <input type="radio" id="m" value="m" name="size" />
+                <label class="label-box" for="m">M</label>
+                <input type="radio" id="l" value="l" name="size" />
+                <label class="label-box" for="l">L</label>
+                <input type="radio" id="xl" value="xl" name="size" />
+                <label class="label-box" for="xl">XL</label>
+              </span>
+              </label>
+            </form>
+            <button class="button-order-now">Go to basket</button>
+            <!--/form-->
+            <p class="additional-message">
+              + 49,50 DKK In postage and exp. A total of 198,50 DKKK
+            </p>
+            <ul class="container-product-details">
+              <li>
+                The magazine hits your mailbox every three weeks - postage-free
+              </li>
+              <li>Nice & lightweight fiber jacket from ActiveFit</li>
+              <li>
+                Get big discounts on workout gear and equipment at the "Moreshop"
+                benefit club
+              </li>
+              <li>
+                Digital version of the latest 12 issues of I FORM via the WYPE app
+              </li>
+              <li>
+                You can cancel your subscription at any time. After the offer, you
+                continue in the current subscription to DKK 77.50 per. number
+                incl. delivery.
+              </li>
+            </ul>
+          </div>
+        </section>
+      </div>
     </main>
     <script src="javascript/index.js"></script>
   </body>
