@@ -19,12 +19,13 @@ header {
   background: white;
   position: fixed;
   width: 100%;
-  height: 89px;
+  height: 9.4rem;
 }
 
 .logo {
   max-width: 13rem;
   margin-top: 1.5rem;
+  width: 11rem;
 }
 
 hr {
@@ -45,6 +46,12 @@ hr {
   margin-right: 1.6rem;
   font-size: 1.1rem;
   color: #5c1182;
+}
+
+.back-button {
+  position: absolute;
+  top: -11px;
+  left: 0;
 }
 
 /**/
@@ -268,7 +275,7 @@ button {
   position: relative;
   display: flex;
   border-bottom: solid 1px #e9e8e8;
-  height: 2.5rem;
+  height: 2.8rem;
   margin-top: 1rem;
 }
 
@@ -307,6 +314,7 @@ button {
   padding-top: 1px;
   display: flex;
   justify-content: center;
+  min-height: 100vh;
 }
 .subs-section {
   width: 100%;
@@ -386,6 +394,7 @@ button {
   height: 5rem;
   font-size: 1.7rem;
   font-weight: 800;
+  margin-top: 1rem;
 }
 
 .subscription-container-default > h3 {
@@ -465,7 +474,7 @@ button {
   position: absolute;
   top: -0.5rem;
   background: white;
-  width: 27%;
+  width: 28%;
   left: calc(50% - (27% / 2));
   cursor: pointer;
   font-size: 1.4rem;
@@ -494,8 +503,8 @@ input[name="sub"]:checked ~ .subscription-container-default .subsLabel {
 /* ------------------------------ your basket page  */
 
 .message-pricelist {
-  border-bottom: solid 1px grey;
-  height: 34px;
+  border-bottom: solid 1px #E9E8E8;
+  height: 45px;
   margin-bottom: 1rem;
   width: 76%;
 }
@@ -505,14 +514,19 @@ input[name="sub"]:checked ~ .subscription-container-default .subsLabel {
   justify-content: space-between;
   width: 100%;
   margin-left: 0;
-}
-
-.message-pricelist > h3 {
   font-size: 1.5rem;
 }
+
 .message-pricelist > h3 > span {
   font-size: inherit;
 }
+
+.message-pricelist > h3 > span > a {
+  border-bottom: solid 1px #5C1182;
+  color: #5C1182;
+  font-size: inherit;
+}
+
 .price-info-basket {
   text-align: center;
 }
@@ -574,40 +588,82 @@ input[name="sub"]:checked ~ .subscription-container-default .subsLabel {
   width: 77%;
   margin: auto;
 }
+
 .form-delivery input {
   grid-column: 1 / -1;
   box-sizing: border-box;
   width: 100%;
+  height: 5rem;
+  font-size: 1.5rem;
   padding: 1rem;
   border-radius: 0.5rem;
-  border: solid 0.1rem lightgray;
+  border: solid 0.1rem #E9E8E8;
 }
+
+.form-delivery input:focus {
+  border: solid 0.1rem #5C1182;
+}
+
 .form-delivery input::placeholder {
   color: black;
   opacity: 1;
 }
+
 .form-delivery input[name="zip"] {
   grid-column: 1 / 2;
 }
+
 .form-delivery input[name="city"] {
   grid-column: 2 / -1;
 }
+
 /*Bottom section*/
 .bottomDelivery {
   background: white;
 }
+
 .bottomDelivery p {
   width: 77%;
   margin: auto;
 }
+
 .bottomDelivery h3 {
   text-align: center;
   font-size: 1.4rem;
   font-weight: 100;
 }
+
 .bottomDelivery img {
   margin: auto;
   display: block;
+}
+
+.modal-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.modal-content {
+  position: absolute;
+  top: 5.5rem;
+  background: white;
+  width: 100vw;
+  height: 91.7vh;
+  max-width: 520px;
+}
+
+.modal-content > h2 {
+  font-weight: 300;
+  text-align: center;
+  font-size: 1.6rem;
+  margin-top: 5rem;
+  margin-bottom: 6rem;
+}
+
+.highlight {
+  color: #fe3366;
+  font-weight: 600;
 }
 
 /*------------------------------------------- Media queries */
@@ -660,6 +716,11 @@ input[name="sub"]:checked ~ .subscription-container-default .subsLabel {
   .price-overview > h4 {
     margin-block-start: 0;
   }
+
+  .product-container-selected {
+    height: 11rem;
+    grid-template-rows: 19% 6% auto;
+  }
 }
 
 @media screen and (min-width: 900px) {
@@ -669,5 +730,11 @@ input[name="sub"]:checked ~ .subscription-container-default .subsLabel {
 
   .container-product-details > li {
     font-size: 1.6rem;
+  }
+}s
+
+@media screen and (min-width: 520px) {
+  .back-button {
+    display: none;
   }
 }
