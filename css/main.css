@@ -108,8 +108,9 @@ h2 {margin-top: 10rem;}
   margin-block-start: -0.5rem;
 }
 
-.slideshow-container {
-  max-width: 700px;
+.slideshow-img {
+  max-width: 1140px !important;
+  width: 100vw;
 }
 
 .navigation-slideshow {
@@ -613,13 +614,15 @@ input[name="sub"]:checked ~ .subscription-container-default .subsLabel {
 /*------------------------------------------- Media queries */
 @media screen and (min-width: 620px) {
   .index-main-container {
+    max-width: 1140px;
     background: #f4f4f4;
-  }
-
-  .index-main {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(4, 1fr);
+    grid-template-rows: 1rem 14rem auto;
+    grid-template-areas:
+            ". ."
+            "caption caption"
+            "index-figure index-section";
   }
 
   .slideshow-container {
@@ -635,12 +638,30 @@ input[name="sub"]:checked ~ .subscription-container-default .subsLabel {
     width: 100vw;
     margin-block-start: 0;
     justify-content: center;
+    grid-area: caption;
+  }
+
+  .index-figure {
+    margin-top: 1rem;
+    grid-area: index-figure;
+  }
+
+  .index-section {
+    background: #f4f4f4;
+    padding-bottom: 1.1rem;
+    grid-area: index-section;
+  }
+
+  .slideshow-container, .slideshow-img {
+    max-width: 1140px !important;
+    width: 48vw;
+  }
+
+  .price-overview > h4 {
+    margin-block-start: 0;
   }
 }
 
+@media screen and (min-width: 620px) {
 
-/*background: #f4f4f4;*/
-/*display: grid;*/
-/*grid-template-columns: 1fr 1fr;*/
-/*!* grid-template-rows: repeat(4, 1fr); *!*/
-/*grid-area: "index-figure index-section";*/
+}
