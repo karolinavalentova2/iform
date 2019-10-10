@@ -14,6 +14,11 @@ const chosenSaving = document.querySelector(".message-pricelist .highlight");
 const chosenCampaingPrice = document.querySelectorAll(".message-pricelist h3");
 const chosenPrice = document.querySelector(".price-info-basket h2");
 
+// return button
+document.querySelector(".return").addEventListener("click", e => {
+  window.history.back();
+});
+
 // Check subscription
 if (listInformation[2] == "sub=1") {
   chosenSub.textContent = "4 Magazines";

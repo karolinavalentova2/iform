@@ -9,6 +9,7 @@ listInformation = currentURL.split("?");
 console.log(listInformation);
 
 const chosenPrice = document.querySelector(".price-info-basket h2");
+const done = document.querySelector(".confirm-button");
 
 // Check subscription
 if (listInformation[1] == "sub=1") {
@@ -18,3 +19,7 @@ if (listInformation[1] == "sub=1") {
 } else {
   chosenPrice.textContent = "348,50 DDK";
 }
+
+done.addEventListener("click", e => {
+  window.location.href = `index.html`;
+});
