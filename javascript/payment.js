@@ -1,9 +1,15 @@
 "use strict";
 
 // grap browser url and save in a variable
-let location = window.location.href;
-console.log(location);
+let currentURL = window.location.href;
 
-document.querySelector("#orderDone").addEventListener("click", e => {
-  //window.location.href = "done.html?size=s?sub=1?confirm=true";
+const form = document.querySelector("form").elements;
+console.log(form);
+
+console.log(form.btnComplete);
+
+form.btnComplete.addEventListener("click", e => {
+  e.preventDefault();
+  console.log("click");
+  window.location.href = "complete.html";
 });

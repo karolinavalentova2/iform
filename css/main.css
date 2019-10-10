@@ -181,7 +181,7 @@ a.arrow-right {
   margin-block-end: 1rem;
 }
 
-input[type="radio"] {
+.indexRadio {
   position: absolute;
   visibility: hidden;
   display: none;
@@ -435,7 +435,7 @@ button {
   position: absolute;
   font-size: 1.1rem;
   font-weight: 700;
-  margin-block-start: 0rem;
+  /*margin-block-start: 0rem;*/
 }
 
 .expand-message > h5 {

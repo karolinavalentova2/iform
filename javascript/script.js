@@ -11,10 +11,3 @@ function doLogin(e) {
     window.location.href = `${window.location.origin}/index.html`;
   } else alert("Wrong username or password!");
 }
-// Index
-// go to next page
-document.querySelector(".button-order-now").addEventListener("click", e => {
-  window.location.href = "subscriptions.html";
-});
-
-//basket
