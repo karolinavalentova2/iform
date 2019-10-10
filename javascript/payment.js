@@ -3,6 +3,11 @@
 // grap browser url and save in a variable
 let currentURL = window.location.href;
 
+let listInformation = [];
+listInformation = currentURL.split("html?");
+
+console.log(listInformation);
+
 const form = document.querySelector("form").elements;
 console.log(form);
 
