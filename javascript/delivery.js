@@ -1,22 +1,23 @@
 "use strict";
 
 // grap browser url and save in a variable
-let location = window.location.href;
-console.log(location);
+let currentURL = window.location.href;
+
+let listInformation = [];
+listInformation = currentURL.split("?");
+
+console.log(listInformation);
 
 const form = document.querySelector("form").elements;
+console.log(form);
 
 form.btnPayment.addEventListener("click", e => {
   e.preventDefault();
-  window.location.href =
-    "payment.html" +
-    "?size=s" +
-    "?sub=1" +
-    "?firstname=Jon" +
-    "?lastname=Snow" +
-    "?adress=Castle%20Black" +
-    "?zip=0001" +
-    "?city=Westeros" +
-    "?email=IknowNothing@nWatch.com" +
-    "?phone=11223344";
+  window.location.href = `payment.html?${listInformation[1]}?${
+    listInformation[2]
+  }?firstname=${form.firstname.value}?lastname=${form.lastname.value}?adress=${
+    form.adress.value
+  }?zip=${form.zip.value}?city=${form.city.value}?email=${
+    form.email.value
+  }?phone=${form.phone.value}`;
 });
