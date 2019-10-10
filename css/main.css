@@ -438,7 +438,8 @@ button {
   position: absolute;
   font-size: 1.1rem;
   font-weight: 700;
-  /*margin-block-start: 0rem;*/
+  line-height: 1.1rem;
+  margin: 0;
 }
 
 .expand-message > h5 {
@@ -875,12 +876,15 @@ li::before {
 }
 
 @media screen and (min-width: 900px) {
-  .button-order-now {
-    width: 200px;
-  }
 
   .container-product-details > li {
     font-size: 1.6rem;
+  }
+
+  .index-button-container {
+    display: flex;
+    justify-content: end;
+    width: 100%;
   }
 }
 
