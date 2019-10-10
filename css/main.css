@@ -702,25 +702,37 @@ input[name="sub"]:checked ~ .subscription-container-default .subsLabel {
   width: 77%;
   margin: auto;
 }
-.return,
-.return:visited {
+
+#formPayment > div > label {
+  font-size: 1.5rem;
+}
+
+.return, .return:visited {
   text-align: center;
   font-size: 1.6rem;
   color: #5c1182;
   display: block;
   margin: 2rem 0 0 0;
 }
+
 #formPayment div {
   position: relative;
   width: 100%;
   min-height: 3rem;
   margin-bottom: 1rem;
-  padding: 0.5rem;
   box-sizing: border-box;
+  padding: 1.5rem 1rem;
 }
+
+.add-border {
+  border-radius: 0.5rem;
+  border: solid 0.1rem #e9e8e8;
+}
+
 #formPayment div > * {
   width: initial;
 }
+
 #formPayment label::after {
   position: absolute;
   content: "";
@@ -732,18 +744,23 @@ input[name="sub"]:checked ~ .subscription-container-default .subsLabel {
   border: solid 0.1rem lightgray;
   cursor: pointer;
 }
+
 .terms {
   display: grid !important;
   grid-template-columns: 2rem auto;
   gap: 0.5rem;
+  /*border: none !important;*/
 }
+
 .terms input[type="checkbox"] {
   grid-column: 1 / 2;
 }
+
 .terms label,
 .terms a {
   grid-column: 2 / -1;
 }
+
 .terms a,
 .terms label,
 .marketing a,
@@ -752,16 +769,28 @@ input[name="sub"]:checked ~ .subscription-container-default .subsLabel {
   padding: 0;
   margin: 0;
 }
+
 .terms a,
 .terms a:visited,
 .marketing a,
 .marketing a:visited {
   color: #5c1182;
 }
+
 label[for="terms"]::after,
 label[for="marketing"]::after {
   border: none !important;
 }
+
+#formPayment > ul >li {
+  font-size: 1.5rem;
+}
+
+#formPayment > ul > li::before {
+  border-radius: 4rem;
+}
+
+
 /*------------------Global lists move to top after Merge*/
 ul {
   list-style: none;
