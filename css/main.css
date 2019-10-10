@@ -241,6 +241,9 @@ input[type="radio"]:checked + .label-box {
   font-size: 1.3rem;
   margin-left: 2rem;
 }
+.container-product-details > li::before {
+  display: none;
+}
 
 /*--------------------------------------------------basket*/
 .indicator {
@@ -696,6 +699,8 @@ input[name="sub"]:checked ~ .subscription-container-default .subsLabel {
 /*----------Payment*/
 #formPayment {
   display: block;
+  width: 77%;
+  margin: auto;
 }
 .return,
 .return:visited {

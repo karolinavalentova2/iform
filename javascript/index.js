@@ -3,8 +3,9 @@
 // Index
 // grap browser url and save in a variable
 let location = window.location.href;
-console.log(location);
 
+const form = document.querySelector("form").elements;
+console.log(form);
 // check
 
 // go to next page
