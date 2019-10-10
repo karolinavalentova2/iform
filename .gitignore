@@ -3,3 +3,4 @@ documentation/
 dist/
 .cache/
 prototype.xd
+node_modules/
