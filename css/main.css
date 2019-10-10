@@ -20,6 +20,8 @@ header {
   position: fixed;
   width: 100%;
   height: 9.4rem;
+  /*height: 89px;*/
+  z-index: 9001;
 }
 
 .logo {
@@ -103,9 +105,12 @@ hr {
   /*padding-top: 1px;*/
 }
 
-h2 {margin-top: 10rem;}
+h2 {
+  margin-top: 10rem;
+}
 
-.index-caption > h2, h3 {
+.index-caption > h2,
+h3 {
   font-size: 1.8rem;
   margin-left: 2rem;
 }
@@ -176,7 +181,7 @@ a.arrow-right {
   margin-block-end: 1rem;
 }
 
-input[type=radio] {
+input[type="radio"] {
   position: absolute;
   visibility: hidden;
   display: none;
@@ -191,22 +196,22 @@ input[type=radio] {
 }
 
 .label-box {
-  color: #8B8B8B;
+  color: #8b8b8b;
   display: inline-block;
   cursor: pointer;
   font-weight: bold;
   padding: 5px 15px;
 }
 
-input[type=radio] + .label-box{
-  border: solid 2px #D5D5D5;
+input[type="radio"] + .label-box {
+  border: solid 2px #d5d5d5;
   border-radius: 5px;
   font-size: 1.3rem;
   background: white;
 }
 
-input[type=radio]:checked + .label-box{
-  border: solid 2px #5C1182;
+input[type="radio"]:checked + .label-box {
+  border: solid 2px #5c1182;
   border-radius: 5px;
   color: black;
 }
@@ -350,7 +355,7 @@ button {
 
 .free-gift {
   color: white;
-  background: #FF3366;
+  background: #ff3366;
   padding: 0.5rem 1rem;
   border-radius: 1rem;
   position: absolute;
@@ -414,7 +419,7 @@ button {
 
 .discount-icon {
   color: white;
-  background: #FF3366;
+  background: #ff3366;
   border-radius: 0.7rem;
   position: absolute;
   width: 7.7rem;
@@ -444,7 +449,7 @@ button {
 }
 
 .postage-info {
-  color: #5B5B5B;
+  color: #5b5b5b;
   font-size: 1.3rem;
   text-align: center;
   margin-block-start: 1rem;
@@ -490,20 +495,20 @@ input[name="sub"] {
   display: none;
 }
 input[name="sub"]:checked ~ .subscription-container-default {
-  border: solid 2px #5C1182 !important;
+  border: solid 2px #5c1182 !important;
 }
 input[name="sub"]:checked ~ .subscription-container-default .subsLabel {
   font-weight: bold;
 }
 
 .subsLabelPopular {
-  color: #5C1182;
+  color: #5c1182;
   font-weight: bold;
 }
 /* ------------------------------ your basket page  */
 
 .message-pricelist {
-  border-bottom: solid 1px #E9E8E8;
+  border-bottom: solid 1px #e9e8e8;
   height: 45px;
   margin-bottom: 1rem;
   width: 76%;
@@ -522,8 +527,8 @@ input[name="sub"]:checked ~ .subscription-container-default .subsLabel {
 }
 
 .message-pricelist > h3 > span > a {
-  border-bottom: solid 1px #5C1182;
-  color: #5C1182;
+  border-bottom: solid 1px #5c1182;
+  color: #5c1182;
   font-size: inherit;
 }
 
@@ -597,11 +602,11 @@ input[name="sub"]:checked ~ .subscription-container-default .subsLabel {
   font-size: 1.5rem;
   padding: 1rem;
   border-radius: 0.5rem;
-  border: solid 0.1rem #E9E8E8;
+  border: solid 0.1rem #e9e8e8;
 }
 
 .form-delivery input:focus {
-  border: solid 0.1rem #5C1182;
+  border: solid 0.1rem #5c1182;
 }
 
 .form-delivery input::placeholder {
@@ -617,7 +622,9 @@ input[name="sub"]:checked ~ .subscription-container-default .subsLabel {
   grid-column: 2 / -1;
 }
 
-.end-form-margin {margin-bottom: 3rem !important;}
+.end-form-margin {
+  margin-bottom: 3rem !important;
+}
 
 /*Bottom section*/
 .bottomDelivery {
@@ -686,6 +693,88 @@ input[name="sub"]:checked ~ .subscription-container-default .subsLabel {
   padding-bottom: 9rem;
 }
 
+/*----------Payment*/
+#formPayment {
+  display: block;
+}
+.return,
+.return:visited {
+  text-align: center;
+  font-size: 1.6rem;
+  color: #5c1182;
+  display: block;
+  margin: 2rem 0 0 0;
+}
+#formPayment div {
+  position: relative;
+  width: 100%;
+  min-height: 3rem;
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  box-sizing: border-box;
+}
+#formPayment div > * {
+  width: initial;
+}
+#formPayment label::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  border: solid 0.1rem lightgray;
+  cursor: pointer;
+}
+.terms {
+  display: grid !important;
+  grid-template-columns: 2rem auto;
+  gap: 0.5rem;
+}
+.terms input[type="checkbox"] {
+  grid-column: 1 / 2;
+}
+.terms label,
+.terms a {
+  grid-column: 2 / -1;
+}
+.terms a,
+.terms label,
+.marketing a,
+.marketing label {
+  font-size: 1rem;
+  padding: 0;
+  margin: 0;
+}
+.terms a,
+.terms a:visited,
+.marketing a,
+.marketing a:visited {
+  color: #5c1182;
+}
+label[for="terms"]::after,
+label[for="marketing"]::after {
+  border: none !important;
+}
+/*------------------Global lists move to top after Merge*/
+ul {
+  list-style: none;
+}
+li {
+  margin: 0 0 1rem 3rem;
+  position: relative;
+}
+li::before {
+  --size: 0.7rem;
+  position: absolute;
+  content: "";
+  width: var(--size);
+  height: var(--size);
+  background: black;
+  top: 0.3rem;
+  left: -1.7rem;
+}
 /*------------------------------------------- Media queries */
 @media screen and (min-width: 620px) {
   .index-main-container {
@@ -697,18 +786,25 @@ input[name="sub"]:checked ~ .subscription-container-default .subsLabel {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1rem 14rem auto;
     grid-template-areas:
-            ". ."
-            "caption caption"
-            "index-figure index-section";
+      ". ."
+      "caption caption"
+      "index-figure index-section";
   }
 
   .slideshow-container {
     width: 300px;
   }
 
-  .index-figure {margin-top: 1rem;}
-  .index-caption > h2, h3 {font-size: 2.2rem;}
-  .index-caption > h3 {margin-top: 10rem;;}
+  .index-figure {
+    margin-top: 1rem;
+  }
+  .index-caption > h2,
+  h3 {
+    font-size: 2.2rem;
+  }
+  .index-caption > h3 {
+    margin-top: 10rem;
+  }
 
   .index-caption {
     display: inline-flex;
@@ -728,7 +824,8 @@ input[name="sub"]:checked ~ .subscription-container-default .subsLabel {
     grid-area: index-section;
   }
 
-  .slideshow-container, .slideshow-img {
+  .slideshow-container,
+  .slideshow-img {
     max-width: 600px;
     width: 48vw;
   }
